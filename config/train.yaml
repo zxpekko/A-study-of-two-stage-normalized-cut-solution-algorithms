@@ -1,0 +1,32 @@
+# environment configs
+gamma: 0.95
+train_sample: 50
+test_sample: 5
+
+# node and graph type
+node: 80
+graph_type: er
+
+# learning configs
+batch_size: 1
+lr_steps: []
+max_timesteps: 10
+k_epochs: 10
+update_timestep: 20
+learning_rate: 0.001
+eps_clip: 0.1
+
+# model parameters
+node_output_size: 16
+gnn_layers: 3
+
+# test parameters
+search_size: 12
+
+# misc configs
+log_interval: 1
+test_interval: 500
+max_episodes: 500
+
+test: False
+low_stage: gnn
